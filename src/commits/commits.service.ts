@@ -22,7 +22,7 @@ export class CommitsService {
         date: commit.commit.author.date,
       } as Commit;
     });
-    return commits;
+    return githubResponse;
   }
 
   findOne(id: number) {
