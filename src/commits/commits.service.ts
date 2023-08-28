@@ -17,7 +17,7 @@ export class CommitsService {
         date: commit.commit.author.date,
       } as Commit;
     });
-    return githubResponse;
+    return commits;
   }
 
 }
