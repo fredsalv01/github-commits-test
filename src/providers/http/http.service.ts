@@ -9,9 +9,7 @@ export class HttpCustomService {
   public async apiFindAll() {
     try {
       const response = await firstValueFrom(
-        this.httpService.get(
-          'https://api.github.com/repos/fredsalv01/github-commits-test/commits',
-        ),
+        this.httpService.get(process.env.BACKEND_LINK_GITHUB),
       );
       return response.data;
     } catch (error) {
