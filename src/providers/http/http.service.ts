@@ -10,7 +10,7 @@ export class HttpCustomService {
     try {
       const response = await firstValueFrom(
         this.httpService.get(
-          'https://api.github.com/repos/fredalbert37/node-github-app/commits',
+          'https://api.github.com/repos/fredsalv01/github-commits-test/commits',
         ),
       );
       return response.data;
